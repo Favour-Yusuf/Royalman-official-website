@@ -1,10 +1,15 @@
 import React from 'react'
-import About from '../Components/About/About'
+import AboutHero from '../Components/About/AboutHero'
+import AboutUs from '../Components/About/AboutUs'
+import Portfolio from '../Components/About/Portfolio'
+
 
 const AboutUsPage = () => {
   return (
     <>
-    <About/>
+    <AboutHero/>
+    <AboutUs/>
+    <Portfolio/>
     </>
   )
 }

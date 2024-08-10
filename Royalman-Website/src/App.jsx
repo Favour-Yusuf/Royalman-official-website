@@ -4,6 +4,7 @@ import HomePage from './Pages/HomePage'
 import WebLayout from './Components/Layout/WebLayout'
 import TermsAndConditionPage from './Pages/TermsAndConditionPage'
 import AboutUsPage from './Pages/AboutUsPage'
+
 // import Index from './Components/Router/routes'
 
 
@@ -18,7 +19,6 @@ const router = createBrowserRouter(
 )
 
 const App = () => {
-
   return <RouterProvider router={router}/>
 }
 

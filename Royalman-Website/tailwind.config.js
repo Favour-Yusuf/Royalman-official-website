@@ -16,7 +16,9 @@ export default {
         'hero': "url('./src/assets/JPEG/BgImage.jpeg')",
         'footer':"url('./src/assets/JPEG/footerbackground.jpeg')",
         'terms': "url('./src/assets/JPEG/TermsHero.webp')",
-        'about':"url('./src/assets/JPEG/AboutHero.jpeg')"
+        'about':"url('./src/assets/JPEG/AboutHero.jpeg')",
+        'aboutbg':"url('./src/assets/SVG/Aboutbg.svg')",
+        'portfolio':"url('./src/assets/SVG/portfolio.svg')"
       },
     },
   },
