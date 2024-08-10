@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from "../../assets/png/RoyalmanLogo.png"
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -10,10 +11,10 @@ const Header = () => {
             <img src={Logo} alt="Logo" className='h-[70px]' />
         </div>
         <div className=' w-[600px] h-[80%] flex justify-between items-center text-[20px] '>
-            <nav>Home</nav>
-            <nav>About us</nav>
-            <nav>Contact us</nav>
-            <nav>Blog</nav>
+            <Link to='/'>Home</Link>
+            <Link to='/about'>About us</Link>
+            <Link>Contact us</Link>
+            <Link>Blog</Link>
         </div>
         <button className='mr-4 h-9 w-44 rounded-lg bg-brandOne'>Contact us</button>
     </header>

@@ -1,24 +1,25 @@
 import React from 'react'
-import Header from './Components/Static/Header'
-import Hero from './Components/LandingPage/Hero'
-import WhatWeDo from './Components/LandingPage/WhatWeDo'
-import Offers from './Components/LandingPage/Offers'
-import WebMaintenance from './Components/LandingPage/Services/WebMaintenance'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import HomePage from './Pages/HomePage'
+import WebLayout from './Components/Layout/WebLayout'
+import TermsAndConditionPage from './Pages/TermsAndConditionPage'
+import AboutUsPage from './Pages/AboutUsPage'
+// import Index from './Components/Router/routes'
+
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path='/' element={<WebLayout/>}>
+        <Route index element={<HomePage/>}/>
+        <Route path='/termsofservice' element={<TermsAndConditionPage/>}/>
+        <Route path='/about' element={<AboutUsPage/>}/>
+      </Route>
+    )
+)
 
 const App = () => {
 
-  return (
-    <div>
-      <Header/>
-      <Hero/>
-      <WhatWeDo/>
-      <Offers/>
-      <br />
-      <br />
-      <WebMaintenance/>
-      
-    </div>
-  )
+  return <RouterProvider router={router}/>
 }
 
 export default App
