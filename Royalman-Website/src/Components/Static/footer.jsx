@@ -15,9 +15,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="w-[100%]">
-      <div className=" relative h-[70vh] w-[100%] bg-footer bg-cover">
-        <div className="h-[100%] w-[100%] absolute bg-black bg-opacity-85 flex justify-between items-center">
-          <div className="h-[60%] w-[300px]  flex flex-col items-center justify-between  ">
+      <div className=" relative h-[140vh] lg:h-[70vh] w-[100%] bg-footer bg-cover">
+        <div className="h-[100%] w-[100%] absolute flex-wrap bg-black bg-opacity-85 flex lg:justify-between items-center justify-center">
+          <div className="  h-[400px] lg:h-[60%] w-[300px]  flex flex-col items-center justify-between  ">
             <div>
               <img src={Logo} alt="Royalman Logo" className="h-[100px]" />
             </div>
@@ -28,25 +28,25 @@ const Footer = () => {
               Contact Us And Let's Get Started
             </p>
             <div className="h-[80px] w-[80%] flex text-[25px] justify-between items-center text-brandOne">
-              <a href="https://wa.link/ezfpw2" target="blank">
+              <Link to="https://wa.link/ezfpw2" target="blank">
                 <FaWhatsapp />
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=61563814688772" target="blank">
+              </Link>
+              <Link to="https://www.facebook.com/profile.php?id=61563814688772" target="blank">
                 <FaFacebookF />
-              </a>
-              <a href="https://www.linkedin.com/in/royalman-digital-concept-885514322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank">
+              </Link>
+              <Link to="https://www.linkedin.com/in/royalman-digital-concept-885514322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank">
                 <FaLinkedin />
-              </a>
-              <a href="https://www.instagram.com/royalmandigital/" target="blank">
+              </Link>
+              <Link to="https://www.instagram.com/royalmandigital/" target="blank">
                 <FaInstagram />
-              </a>
-              <a href="https://twitter.com/royalmanglobal" target="blank">
+              </Link>
+              <Link to="https://twitter.com/royalmanglobal" target="blank">
                 <FaXTwitter />
-              </a>
+              </Link>
             </div>
             <Link to="/termsofservice" className="text-[18px] text-brandOne mt-7">Term of Service</Link>
           </div>
-          <div className="h-[60%] w-[300px] flex flex-col items-center justify-between">
+          <div className="h-[250px] lg:h-[60%] w-[300px] flex flex-col items-center justify-between ">
             <p className="text-[20px] text-white ">Get in Touch</p>
             <p className="flex items-center text-white w-[58%] justify-between">
               <FaPhoneAlt className="text-brandOne" />
@@ -65,7 +65,7 @@ const Footer = () => {
               Refer & Earn
             </button>
           </div>
-          <div className="h-[60%] w-[300px] flex flex-col items-center  ">
+          <div className="   lg:h-[60%] h-[250px] w-[300px] flex flex-col items-center  ">
             <p className=" text-[30px] text-center leading-8 mb-7 text-white  ">Subscribe to Our Newsletter</p>
             <label htmlFor="email" className="text-[white]">Email address:</label>
             <input type="email"  placeholder="Your email address" className="h-[40px] w-[80%] rounded-xl outline-none pl-5      "/>
