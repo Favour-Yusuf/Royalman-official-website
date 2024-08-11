@@ -2,6 +2,7 @@ import React from "react";
 import EssentialPackage from "../../Props/EssentialPackage";
 import GrowthPackage from "../../Props/GrowthPackage";
 import PremiumPackage from "../../Props/PremiumPackage";
+import PaystackIntegration from "../../Utils/PaystackIntergration";
 
 const Offers = () => {
   return (
@@ -18,7 +19,7 @@ const Offers = () => {
           <EssentialPackage
             Image=""
             Offer="Essential Package"
-            Price="$150/₦150K"
+            Price="₦150K"
             B1="Professional website"
             B2="User friendly website"
             B3="Secured Website"
@@ -28,7 +29,7 @@ const Offers = () => {
           <GrowthPackage
             Image=""
             Offer="Growth Package"
-            Price="$200/₦200K"
+            Price="₦200K"
             B1="Professional website"
             B2="User friendly website"
             B3="Secured Website"
@@ -40,7 +41,7 @@ const Offers = () => {
           <PremiumPackage
             Image=""
             Offer="Premium Package"
-            Price="$400/₦400K"
+            Price="₦400K"
             B1="Professional website"
             B2="User friendly website"
             B3="Secured Website"

@@ -1,8 +1,24 @@
 import React from "react";
 import { MdBusinessCenter } from "react-icons/md";
 import { ImCheckmark2 } from "react-icons/im";
+import { PaystackButton } from "react-paystack";
 
 const PremiumPackage = (props) => {
+  const publicKey = "pk_test_7c6be2b639ced1e29a4ba8228028d8ff9e684e21"; // Replace with your actual Paystack public key
+  const amount = parseInt(props.Price.replace(/[^0-9]/g, "")) * 100000; // Convert price to kobo
+  const email = "favouryusuf45@gmail.com"; // Replace with customer's email, this could be passed as a prop
+  const reference = new Date().getTime().toString(); // Unique transaction reference
+
+  const onSuccess = (reference) => {
+    // Implement what happens after payment is successful
+    console.log(reference);
+    alert("Payment Successful!");
+  };
+
+  const onClose = () => {
+    // Implement what happens when the payment is closed
+    alert("Payment Closed");
+  };
   return (
     <div className="h-auto w-[380px] bg-white rounded-lg flex items-center flex-col p-6 mb-5">
       <MdBusinessCenter className="text-[100px] text-brandOne mb-4" />
@@ -21,9 +37,16 @@ const PremiumPackage = (props) => {
             </div>
           )
       )}
-      <button className="h-[50px] w-full bg-brandOne text-[18px] rounded-xl font-bold mt-6">
-        Chat with us
-      </button>
+      <PaystackButton
+        className='h-[45px] md:h-[50px] w-full bg-brandOne text-[16px] md:text-[18px] rounded-xl font-bold mt-4 md:mt-6 flex items-center justify-center'
+        publicKey={publicKey}
+        amount={amount}
+        email={email}
+        reference={reference}
+        onSuccess={onSuccess}
+        onClose={onClose}
+        text="Get this package"
+      />
     </div>
   );
 };
