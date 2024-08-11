@@ -13,7 +13,7 @@ export default {
         brandTwo:"#000F9A"
       },
       backgroundImage: {
-        'hero': "url('./src/assets/JPEG/BgImage.jpeg')",
+        'hero': url(('./src/assets/JPEG/BgImage.jpeg')),
         'footer':"url('./src/assets/JPEG/footerbackground.jpeg')",
         'terms': "url('./src/assets/JPEG/TermsHero.webp')",
         'about':"url('./src/assets/JPEG/AboutHero.jpeg')",
