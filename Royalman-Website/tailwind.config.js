@@ -16,7 +16,7 @@ export default {
         'hero': "url('./src/assets/JPEG/BgImage.jpeg')",
         'footer':"url('./src/assets/JPEG/footerbackground.jpeg')",
         'terms': "url('./src/assets/JPEG/TermsHero.webp')",
-        'about':"url('./src/assets/JPEG/AboutHero.jpeg')",
+        'about':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1723310140/AboutHero_gtn0oi.jpg')",
         'aboutbg':"url('./src/assets/SVG/Aboutbg.svg')",
         'portfolio':"url('./src/assets/SVG/portfolio.svg')"
       },
