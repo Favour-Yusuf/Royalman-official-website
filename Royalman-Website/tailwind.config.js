@@ -13,12 +13,12 @@ export default {
         brandTwo:"#000F9A"
       },
       backgroundImage: {
-        'hero': "url('./src/assets/JPEG/BgImage.jpeg')",
-        'footer':"url('./src/assets/JPEG/footerbackground.jpeg')",
-        'terms': "url('./src/assets/JPEG/TermsHero.webp')",
+        'hero': "url('https://res.cloudinary.com/decwhxo32/image/upload/v1723390366/BgImage_hpfyf0.jpg')",
+        'footer':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1723390446/footerbackground_relqna.jpg')",
+        'terms': "url('https://res.cloudinary.com/decwhxo32/image/upload/v1723390499/TermsHero_kupoat.webp')",
         'about':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1723310140/AboutHero_gtn0oi.jpg')",
-        'aboutbg':"url('./src/assets/SVG/Aboutbg.svg')",
-        'portfolio':"url('./src/assets/SVG/portfolio.svg')"
+        'aboutbg':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1723390569/Aboutbg_pzcqjf.svg')",
+        'portfolio':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1723390602/portfolio_swrei1.svg')"
       },
     },
   },

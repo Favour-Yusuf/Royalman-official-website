@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../../assets/JPEG/AboutUs.webp";
+import Img from "https://res.cloudinary.com/decwhxo32/image/upload/v1723391067/AboutUs_wtcnk3.webp";
 
 const AboutUs = () => {
   return (

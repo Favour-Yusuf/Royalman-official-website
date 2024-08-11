@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/png/RoyalmanLogo.png";
+import Logo from "https://res.cloudinary.com/decwhxo32/image/upload/v1723390784/RoyalmanLogo_vvjuvk.png";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { MdCancel } from "react-icons/md";
