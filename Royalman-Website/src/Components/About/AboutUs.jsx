@@ -1,11 +1,10 @@
 import React from "react";
-import Img from "https://res.cloudinary.com/decwhxo32/image/upload/v1723391067/AboutUs_wtcnk3.webp";
 
 const AboutUs = () => {
   return (
     <div className="w-[100%] h-[70vh] flex justify-between items-center bg-aboutbg bg-cover">
       <div className="h-[80%] w-[400px]  ml-6 rounded-xl">
-        <img src={Img} alt="" className="h-[100%] w-[100%] rounded-xl" />
+        <img src='https://res.cloudinary.com/decwhxo32/image/upload/v1723391067/AboutUs_wtcnk3.webp' alt="" className="h-[100%] w-[100%] rounded-xl" />
       </div>
       <div className="h-[80%] w-[400px] bg-white shadow-2xl mr-8 rounded-xl flex flex-col items-center justify-center">
         <p className="text-[20px] font-bold text-brandTwo mb-5">About Royalman Digital Concept</p>

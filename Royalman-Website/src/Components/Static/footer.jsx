@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../../assets/png/RoyalmanLogo.png";
 import {
   FaWhatsapp,
   FaFacebookF,
@@ -19,7 +18,7 @@ const Footer = () => {
         <div className="h-[100%] w-[100%] absolute flex-wrap bg-black bg-opacity-85 flex lg:justify-between items-center justify-center">
           <div className="  h-[400px] lg:h-[60%] w-[300px]  flex flex-col items-center justify-between  ">
             <div>
-              <img src={Logo} alt="Royalman Logo" className="h-[100px]" />
+              <img src='https://res.cloudinary.com/decwhxo32/image/upload/v1723390784/RoyalmanLogo_vvjuvk.png' alt="Royalman Logo" className="h-[100px]" />
             </div>
             <p className="text-center text-[22px] text-white mb-5">
               Quality and Affordable Web Development For You.

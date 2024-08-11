@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "https://res.cloudinary.com/decwhxo32/image/upload/v1723390784/RoyalmanLogo_vvjuvk.png";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { MdCancel } from "react-icons/md";
@@ -27,7 +26,7 @@ const Header = () => {
       } `}
     >
       <div className="ml-4">
-        <img src={Logo} alt="Logo" className="h-[70px]" />
+        <img src="https://res.cloudinary.com/decwhxo32/image/upload/v1723390784/RoyalmanLogo_vvjuvk.png" alt="Logo" className="h-[70px]" />
       </div>
       <div className=" w-[600px] h-[80%] justify-between items-center text-[20px] hidden lg:flex ">
         <Link to="/">Home</Link>
