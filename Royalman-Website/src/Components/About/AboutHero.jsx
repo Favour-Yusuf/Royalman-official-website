@@ -2,8 +2,8 @@ import React from 'react'
 
 const AboutHero = () => {
   return (
-    <div className="w-[100%]">
-        <div className=" relative h-[100vh] w-[100%] bg-about bg-cover">
+    <div className="w-[100%] mb-5">
+        <div className=" relative h-[65vh] lg:h-[100vh] w-[100%] bg-about bg-cover">
             <div className="h-[100%] w-[100%] absolute bg-black bg-opacity-60 flex items-center justify-center flex-col">
                 <p className=' text-white text-[70px] font-bold text-center leading-tight'>About Us</p>
               
