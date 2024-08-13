@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaTools } from "react-icons/fa";
 import { ImCheckmark2 } from "react-icons/im";
-import { PaystackButton } from "react-paystack";
+// import { PaystackButton } from "react-paystack";
+import { Link } from 'react-router-dom';
 
 const WebMaintenance = () => {
   const publicKey = "pk_test_7c6be2b639ced1e29a4ba8228028d8ff9e684e21"; // Replace with your actual Paystack public key
@@ -42,16 +43,10 @@ const WebMaintenance = () => {
             <hr className='h-[1px] bg-black mt-2'/>
           </div>
         ))}
-        <PaystackButton
-          className='h-[50px] w-full md:w-[300px] bg-brandOne text-[18px] md:text-[20px] rounded-xl font-bold mb-6 flex items-center justify-center'
-          publicKey={publicKey}
-          amount={amount}
-          email={email}
-          reference={reference}
-          onSuccess={onSuccess}
-          onClose={onClose}
-          text="Pay Now"
-        />
+        <Link to='/payforapackage'>
+        <button>Get Package</button>
+        </Link>
+       
       </div>
     </div>
   );
