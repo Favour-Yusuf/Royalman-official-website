@@ -9,7 +9,7 @@ import { MdOutlineScreenSearchDesktop } from "react-icons/md";
 
 const WhatWeDo = () => {
   return (
-    <div className=" w-[100%] flex items-center content-center">
+    <div className=" w-[100%] flex items-center justify-center">
       <div className="h-[100%] w-[90%]  flex items-center jsutify-center flex-col">
         <p className="text-center lg:text-[45px] text-[20px] font-bold text-gray-700 mb-4 ">
           We can create any kind of website

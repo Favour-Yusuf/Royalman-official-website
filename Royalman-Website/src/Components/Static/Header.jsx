@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
 import { MdCancel } from "react-icons/md";
 import { IoReorderTwo } from "react-icons/io5";
 
@@ -9,127 +8,107 @@ const Header = () => {
   const [show, handleShow] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       if (window.scrollY > 25) {
         handleShow(true);
-      } else handleShow(false);
-    });
-    return () => {
-      window.removeEventListener("scroll", () => {});
+      } else {
+        handleShow(false);
+      }
     };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
-      className={`flex  bg-white justify-between  px-7 md:px-20 lg:px-0 lg:justify-around items-center fixed top-0 left-0 w-full z-10 ${
-        show ? "bg-black duration-700" : "bg:black duration-700"
-      } `}
+      className={`flex justify-between items-center fixed top-0 left-0 w-full z-20 transition-all duration-700 px-5 md:px-10 lg:px-20 ${
+        show ? "bg-white shadow-lg" : "bg-white"
+      }`}
     >
-      <div className="ml-4">
-        <img src="https://res.cloudinary.com/decwhxo32/image/upload/v1723390784/RoyalmanLogo_vvjuvk.png" alt="Logo" className="h-[70px]" />
+      <div className="flex items-center">
+        <img
+          src="https://res.cloudinary.com/decwhxo32/image/upload/v1723390784/RoyalmanLogo_vvjuvk.png"
+          alt="Logo"
+          className="h-[50px] md:h-[60px] lg:h-[70px]"
+        />
       </div>
-      <div className=" w-[600px] h-[80%] justify-between items-center text-[20px] hidden lg:flex ">
-        <Link to="/">Home</Link>
-        <Link to="/about">About us</Link>
-        <Link>Contact us</Link>
-        <Link>Blog</Link>
-      </div>
+
+      <nav className="hidden lg:flex space-x-8 text-lg">
+        <Link to="/" className="hover:text-brandOne">Home</Link>
+        <Link to="/about" className="hover:text-brandOne">About us</Link>
+        <Link to="/contact" className="hover:text-brandOne">Contact us</Link>
+        <Link to="/blog" className="hover:text-brandOne">Blog</Link>
+      </nav>
+
       <Link to="https://wa.link/ezfpw2">
-        <button className="mr-4 h-9 w-44 rounded-lg bg-brandOne hidden md:block">
+        <button className="hidden md:hidden lg:block h-9 w-36 lg:w-44 rounded-lg bg-brandOne text-white hover:bg-brandTwo transition-colors duration-300">
           Contact us
         </button>
       </Link>
-      <div className="flex">
-        <div className="flex justify-between items-center ">
-          <div className="flex lg:hidden">
-            <IoReorderTwo
-              className="text-[40px] cursor-pointer"
-              onClick={() => setMobileNav(true)}
-            />
-          </div>
-        </div>
-        <div className="hidden lg:flex "></div>
+
+      {/* Mobile Menu Icon */}
+      <div className="lg:hidden flex items-center">
+        <IoReorderTwo
+          className="text-3xl cursor-pointer"
+          onClick={() => setMobileNav(true)}
+        />
       </div>
 
-      {/* MobileDesign */}
+      {/* Mobile Menu */}
       <div
-        className={
-          mobileNav
-            ? "fixed top-0 left-0 w-[100%]  h-screen bg-black/90 z-10 duration-700 overflow-y-scroll"
-            : "fixed top-0 left-[-100%] w-[100%] h-screen bg-black/80 z-10 duration-700 overflow-y-scroll delay-200"
-        }
-      ></div>
-
-      <div
-        className={
-          mobileNav
-            ? "fixed top-0 left-0 w-[65%] md:w-[40%] h-screen bg-white z-10 duration-700 overflow-y-scroll delay-200 rounded-tr-3xl rounded-br-3xl"
-            : "fixed top-0 left-[-100%] w-[65%] md:w-[40%] h-screen bg-white z-10 duration-700 overflow-y-scroll"
-        }
+        className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 z-30 transition-transform transform ${
+          mobileNav ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
-        <div>
-          <MdCancel
-            className="text-[30px] absolute right-6 w-5 top-6 cursor-pointer"
-            onClick={() => setMobileNav(false)}
-          />
-        </div>
-
-        <nav className=" h-full bg-card-color">
-          <div className="flex justify-center items-center flex-col h-3/4">
-            <ul className="flex flex-col px-1 py-4 text-black font-semibold mt-16">
-              <Link to='/'>
-                <li
-                  onClick={() => setMobileNav(false)}
-                  className=" font-bold cursor-pointer py-2 flex items-center hover:border-l-4  duration-500 "
-                >
-                  <span className="text-base md:text-xl   hover:text-brandOne font-normal leading-normal">
-                    Home
-                  </span>
-                </li>
-              </Link>
-              <Link to='/about'>
-                <li
-                  onClick={() => setMobileNav(false)}
-                  className=" font-bold cursor-pointer py-2 flex items-center hover:border-l-4  duration-500 "
-                >
-                  <span className="text-base md:text-xl   hover:text-brandOne font-normal leading-normal">
-                    About us
-                  </span>
-                </li>
-              </Link>
-              <Link to='https://wa.link/ezfpw2' target="blank">
-                <li
-                  onClick={() => setMobileNav(false)}
-                  className=" font-bold cursor-pointer py-2 flex items-center hover:border-l-4  duration-500 "
-                >
-                  <span className="text-base md:text-xl   hover:text-brandOne font-normal leading-normal">
-                    Contact us
-                  </span>
-                </li>
-              </Link>
-              <Link to='#'>
-              <li
-                onClick={() => setMobileNav(false)}
-                className=" font-bold cursor-pointer py-2 flex items-center hover:border-l-4  duration-500 "
-              >
-                <span className="text-base md:text-xl   hover:text-brandOne font-normal leading-normal">
-                  Blog
-                </span>
-              </li>
-              </Link>
-              <li
-                onClick={() => setMobileNav(false)}
-                className=" font-bold cursor-pointer py-2 flex items-center hover:border-l-4  duration-500 "
-              >
-                <Link to="https://wa.link/ezfpw2">
-                  <button className="mr-4 h-9 w-44 rounded-lg bg-brandOne">
-                    Chat with us
-                  </button>
-                </Link>
-              </li>
-            </ul>
+        <div
+          className={`fixed top-0 left-0 w-[65%] md:w-[50%] lg:w-[40%] h-full bg-white z-40 transition-transform transform ${
+            mobileNav ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          <div className="flex justify-end p-4">
+            <MdCancel
+              className="text-2xl cursor-pointer"
+              onClick={() => setMobileNav(false)}
+            />
           </div>
-        </nav>
+
+          <nav className="flex flex-col items-center space-y-6 mt-8 text-lg">
+            <Link
+              to="/"
+              onClick={() => setMobileNav(false)}
+              className="hover:text-brandOne"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setMobileNav(false)}
+              className="hover:text-brandOne"
+            >
+              About us
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setMobileNav(false)}
+              className="hover:text-brandOne"
+            >
+              Contact us
+            </Link>
+            <Link
+              to="/blog"
+              onClick={() => setMobileNav(false)}
+              className="hover:text-brandOne"
+            >
+              Blog
+            </Link>
+            <Link to="https://wa.link/ezfpw2" target="_blank">
+              <button className="h-9 w-36 md:w-44 rounded-lg bg-brandOne text-white hover:bg-brandTwo transition-colors duration-300">
+                Chat with us
+              </button>
+            </Link>
+          </nav>
+        </div>
       </div>
     </header>
   );

@@ -2,16 +2,15 @@ import React from "react";
 import EssentialPackage from "../../Props/EssentialPackage";
 import GrowthPackage from "../../Props/GrowthPackage";
 import PremiumPackage from "../../Props/PremiumPackage";
-import PaystackIntegration from "../../Utils/PaystackIntergration";
 
 const Offers = () => {
   return (
-    <div className="h-[330vh] lg:h-[185vh] w-[100%] bg-brandTwo flex items-center justify-center ">
+    <div className="h-auto w-[100%] bg-brandTwo flex items-center justify-center ">
       <div className="h-[95%] w-[95%]  ">
-        <p className="text-[50px] text-center font-bold text-white ">
+        <p className="text-[30px] lg:text-[50px] text-center font-bold text-white ">
           The best Offers
         </p>
-        <p className="text-center text-[20px] to-gray-500 text-white ">
+        <p className="text-center text-[18px] lg:text-[20px] to-gray-500 text-white ">
           Choose the ideal plan for what you need. We work with affordable
           prices for all types of websites.
         </p>

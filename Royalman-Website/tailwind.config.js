@@ -5,8 +5,6 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-
-    
     extend: {
       colors:{
         brandOne: "#FF9300",
