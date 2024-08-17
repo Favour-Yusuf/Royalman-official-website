@@ -18,7 +18,7 @@ const Offers = () => {
           <EssentialPackage
             Image=""
             Offer="Essential Package"
-            Price="₦150K"
+            Price="$95"
             B1="Professional website"
             B2="User friendly website"
             B3="Secured Website"
@@ -28,7 +28,7 @@ const Offers = () => {
           <GrowthPackage
             Image=""
             Offer="Growth Package"
-            Price="₦200K"
+            Price="$127"
             B1="Professional website"
             B2="User friendly website"
             B3="Secured Website"
@@ -40,7 +40,7 @@ const Offers = () => {
           <PremiumPackage
             Image=""
             Offer="Premium Package"
-            Price="₦400K"
+            Price="$253"
             B1="Professional website"
             B2="User friendly website"
             B3="Secured Website"
