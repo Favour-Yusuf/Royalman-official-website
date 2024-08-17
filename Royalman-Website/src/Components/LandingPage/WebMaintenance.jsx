@@ -16,7 +16,7 @@ const WebMaintenance = () => {
           Let us look after your site for you
         </p>
         <div className='h-[60px] md:h-[80px] w-full mb-6 border-brandTwo border-opacity-70 border-2 rounded-[40px] flex items-center justify-center text-[22px] md:text-[30px]'>
-          N30k/Month
+          $19/Month
         </div>
         {['Themes/Plugins/Site Update', '24/7 Site Monitoring', 'Regular Backups'].map((text, index) => (
           <div key={index} className='w-full mb-6'>
