@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import { HashRouter as createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import WebLayout from './Components/Layout/WebLayout'
 import TermsAndConditionPage from './Pages/TermsAndConditionPage'
