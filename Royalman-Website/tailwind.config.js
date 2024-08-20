@@ -16,7 +16,8 @@ export default {
         'terms': "url('https://res.cloudinary.com/decwhxo32/image/upload/v1723390499/TermsHero_kupoat.webp')",
         'about':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1723310140/AboutHero_gtn0oi.jpg')",
         'aboutbg':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1723390569/Aboutbg_pzcqjf.svg')",
-        'portfolio':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1723390602/portfolio_swrei1.svg')"
+        'portfolio':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1723390602/portfolio_swrei1.svg')",
+        'blog':"url('https://res.cloudinary.com/decwhxo32/image/upload/v1724083671/blog_i4tg5l.webp')"
       },
     },
   },

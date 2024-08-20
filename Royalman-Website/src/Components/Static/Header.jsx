@@ -37,7 +37,7 @@ const Header = () => {
       <nav className="hidden lg:flex space-x-8 text-lg">
         <Link to="/" className="hover:text-brandOne">Home</Link>
         <Link to="/about" className="hover:text-brandOne">About us</Link>
-        <Link to="/contact" className="hover:text-brandOne">Contact us</Link>
+        <Link to="https://wa.link/ezfpw2" className="hover:text-brandOne">Contact us</Link>
         <Link to="/blog" className="hover:text-brandOne">Blog</Link>
       </nav>
 
@@ -89,7 +89,7 @@ const Header = () => {
               About us
             </Link>
             <Link
-              to="/contact"
+              to="https://wa.link/ezfpw2"
               onClick={() => setMobileNav(false)}
               className="hover:text-brandOne"
             >
