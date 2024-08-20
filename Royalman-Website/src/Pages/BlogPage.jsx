@@ -7,7 +7,7 @@ const BlogPage = () => {
   return (
     <div>
       <Helmet>
-        <title>{post.title} | Royalman Digital Concept</title>
+        <title>Royalman Blog</title>
         <meta name="description" content='Royalman blogs' />
         <link rel="canonical" href= '/blog/'/>
       </Helmet>
