@@ -16,6 +16,7 @@ const BlogDetails = () => {
       <Helmet>
         <title>{post.title} | Royalman Digital Concept</title>
         <meta name="description" content={post.content.slice(0, 150)} />
+        <link rel="canonical" href= {`/blog/${post.slug}`}/>
       </Helmet>
       {/* Hero Section */}
       <div className="w-[100%] mb-5">
