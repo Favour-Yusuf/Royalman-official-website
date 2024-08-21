@@ -11,6 +11,7 @@ const BlogDetails = () => {
     return <div>Post not found</div>;
   }
 
+
   return (
     <div>
       <Helmet>
@@ -18,10 +19,10 @@ const BlogDetails = () => {
         <meta name="description" content={post.content.slice(0, 150)} />
         <link rel="canonical" href= {`/blog/${post.slug}`}/>
       </Helmet>
-      {/* Hero Section */}
+      {/* Hero Section */} 
       <div className="w-[100%] mb-5">
         <div
-          className="relative h-[65vh] lg:h-[100vh] w-[100%] bg-about bg-cover"
+          className="relative h-[65vh] lg:h-[100vh] w-[100%] bg-cover"
           style={{ backgroundImage: `url(${post.heroImage})` }}
         >
           <div className="h-[100%] w-[100%] absolute bg-black bg-opacity-60 flex items-center justify-center flex-col">

@@ -6,9 +6,11 @@ const Blog = () => {
   const [blogPosts, setBlogPosts] = useState([]);
 
   useEffect(() => {
-    // Load posts from the JSON file
+    // Load posts from the JSON file  
     setBlogPosts(posts);
   }, []);
+
+
 
   return (
     <div className="container mx-auto px-4 py-8">

@@ -19,7 +19,6 @@ const router = createBrowserRouter(
         <Route path='/about' element={<AboutUsPage/>}/>
         <Route path='/blog' element={<BlogPage/>}/>
         <Route path='/blog/:slug' element={<BlogDetails/>}/>
-        {/* <Route path='/payforapackage' element={<WebMaintenanceWithForm/>} /> */}
       </Route>
     )
 )
