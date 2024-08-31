@@ -1,5 +1,6 @@
 // SuccessStory.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SuccessStory = () => {
   return (
@@ -37,9 +38,11 @@ const SuccessStory = () => {
         </p>
 
         <div className="flex justify-center">
+          <Link to="https://wa.link/ezfpw2" target='_blank' >
           <button className="bg-brandOne hover:bg-brandTwo text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-300">
             Start Your Order
           </button>
+          </Link>
         </div>
       </div>
     </div>
