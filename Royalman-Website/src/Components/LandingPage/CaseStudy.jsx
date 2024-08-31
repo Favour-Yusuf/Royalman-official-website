@@ -40,9 +40,6 @@ const SuccessStory = () => {
           <button className="bg-brandOne hover:bg-brandTwo text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-300">
             Start Your Order
           </button>
-          <button className="bg-brandOne hover:bg-brandTwo text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-300">
-            Start Your Order
-          </button>
         </div>
       </div>
     </div>
