@@ -4,6 +4,8 @@ import WhatWeDo from '../Components/LandingPage/WhatWeDo'
 import Offers from '../Components/LandingPage/Offers'
 import WebMaintenance from '../Components/LandingPage/WebMaintenance'
 import SuccessStory from '../Components/LandingPage/CaseStudy'
+import FrustrationsList from '../Components/LandingPage/ProblemIdentification'
+import Consequences from '../Components/LandingPage/Consequences'
 // import { Helmet } from 'react-helmet-async'
 
 
@@ -16,6 +18,8 @@ const HomePage = () => {
     <Hero/>
     <WhatWeDo/>
     <SuccessStory/>
+    <FrustrationsList/>
+    <Consequences/>
     <Offers/>
     <br />
     <WebMaintenance/>
