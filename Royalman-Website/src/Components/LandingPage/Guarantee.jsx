@@ -1,5 +1,6 @@
 // MoneyBackGuarantee.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MoneyBackGuarantee = () => {
   return (
@@ -17,9 +18,11 @@ const MoneyBackGuarantee = () => {
         <h4 className="text-lg font-semibold text-gray-800 mb-4">
           Experience the Difference Risk-Free!
         </h4>
+        <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target='blank'>
         <button className="bg-brandOne hover:bg-brandTwo text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300">
           Start Your Risk-Free Project
         </button>
+        </Link>
       </div>
     </div>
   );

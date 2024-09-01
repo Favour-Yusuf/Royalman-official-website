@@ -1,6 +1,7 @@
 // ProcessSteps.js
 import React from 'react';
 import { FaCalendarAlt, FaMoneyCheckAlt, FaFileUpload, FaRegEdit, FaRocket } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const steps = [
   {
@@ -46,9 +47,11 @@ const ProcessSteps = () => {
         </div>
       ))}
       <div className="text-center mt-8">
+        <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target='blank'>
         <button className="bg-brandOne hover:bg-brandTwo text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
           Book Your Free Consultation
         </button>
+        </Link>
       </div>
     </div>
   );

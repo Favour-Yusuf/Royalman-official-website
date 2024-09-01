@@ -1,12 +1,13 @@
 // Packages.js
 import React from 'react';
 import { FaRegCheckCircle, FaMobileAlt, FaChartLine, FaShoppingCart, FaCog } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const packages = [
   {
     title: "Essential",
     subtitle: "Perfect for Small Businesses or Startups",
-    price: "$X,XXX",
+    price: "$100",
     features: [
       "Custom Website Design",
       "Mobile Optimization",
@@ -23,7 +24,7 @@ const packages = [
   {
     title: "Professional",
     subtitle: "Ideal for Growing Businesses Looking to Expand Online",
-    price: "$X,XXX",
+    price: "$200",
     features: [
       "All features in Essential",
       "Enhanced SEO and Analytics Integration",
@@ -41,7 +42,7 @@ const packages = [
   {
     title: "Premium",
     subtitle: "The Ultimate Solution for Businesses Ready to Maximize Online Impact",
-    price: "$X,XXX",
+    price: "$400",
     features: [
       "All features in Professional",
       "Advanced SEO and Performance Optimization",
@@ -83,19 +84,24 @@ const Packages = () => {
               ))}
             </ul>
             <p className="text-gray-600 mb-4">{pkg.idealFor}</p>
-            <button className={`${pkg.buttonColor} text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300`}>
+           
+          <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="blank">
+           <button className={`${pkg.buttonColor} text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300`}>
               {pkg.buttonText}
             </button>
+           </Link>
           </div>
         ))}
       </div>
       <div className="text-center mt-12">
         <h4 className="text-lg font-semibold text-gray-800 mb-4">
-          Ready to Elevate Your Online Presence? Choose the Package That’s Right for You and Get Started Today!
+          Ready to Elevate Your Online Presence? Choose the Package That’s Right for You and Get Started Today.
         </h4>
-        <button className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300">
+          <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="blank">
+        <button className="bg-brandOne hover:bg-brandTwo text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300">
           Start Your Order
         </button>
+        </Link>
       </div>
     </div>
   );

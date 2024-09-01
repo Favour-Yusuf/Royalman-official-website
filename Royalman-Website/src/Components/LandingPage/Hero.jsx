@@ -20,7 +20,7 @@ const Hero = () => {
             conversions, attract customers, and grow your business's ROI—all in
             just 30 days.
           </p>
-          <Link to="https://wa.link/ezfpw2" target="blank">
+          <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="blank">
             <button className="h-11 mt-10 text-white hover:bg-brandTwo font-bold w-[150px] rounded-lg bg-brandOne">
               start your order
             </button>

@@ -33,7 +33,7 @@ const SuccessStory = () => {
       <p className="text-gray-600 mb-6">
         This example demonstrates how investing in a well-designed, conversion-focused website can significantly boost your business's ROI. Whether you're a startup or an established business, a strategic website redesign can enhance your online presence, attract more customers, and drive sales.
       </p>
-            <Link to="https://wa.link/ezfpw2">
+            <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation">
             <button className="bg-brandOne hover:bg-brandTwo text-white font-bold py-2 px-4 rounded transition duration-300">
         Start Your Order
       </button>

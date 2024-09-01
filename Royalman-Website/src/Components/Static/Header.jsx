@@ -41,9 +41,9 @@ const Header = () => {
         <Link to="/blog" className="hover:text-brandOne">Blog</Link>
       </nav>
 
-      <Link to="https://wa.link/ezfpw2">
+      <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation">
         <button className="hidden md:hidden lg:block h-9 w-36 lg:w-44 rounded-lg bg-brandOne text-white hover:bg-brandTwo transition-colors duration-300">
-          Contact us
+          Free Quote
         </button>
       </Link>
 
@@ -102,9 +102,9 @@ const Header = () => {
             >
               Blog
             </Link>
-            <Link to="https://wa.link/ezfpw2" target="_blank">
+            <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="_blank">
               <button className="h-9 w-36 md:w-44 rounded-lg bg-brandOne text-white hover:bg-brandTwo transition-colors duration-300">
-                Chat with us
+                Free Quote
               </button>
             </Link>
           </nav>
