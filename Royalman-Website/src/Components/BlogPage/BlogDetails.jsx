@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import posts from "./Posts.json";
 import { Helmet } from "react-helmet-async";
+import ShareButton from "./ShareButton";
 
 const BlogDetails = () => {
   const { slug } = useParams();
@@ -11,14 +12,14 @@ const BlogDetails = () => {
     return <div>Post not found</div>;
   }
 
-
   return (
     <div>
       <Helmet>
         <title>{post.title} | Royalman Digital Concept</title>
         <meta name="description" content={post.content.slice(0, 150)} />
-        <link rel="canonical" href= {`/blog/${post.slug}`}/>
+        <link rel="canonical" href={`/blog/${post.slug}`} />
       </Helmet>
+
       {/* Hero Section */} 
       <div className="w-[100%] mb-5">
         <div
@@ -35,9 +36,13 @@ const BlogDetails = () => {
       {/* Blog Content Section */}
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <p className="text-gray-600 mb-4">
+          {/* Share Button */}
+      <div className="mb-6 flex justify-between">
+      <p className="text-gray-600 mb-4">
             <strong>Author:</strong> {post.author}
           </p>
+            <ShareButton url={window.location.href} title={post.title} />
+          </div>
           <img
             src={post.image}
             alt={post.title}

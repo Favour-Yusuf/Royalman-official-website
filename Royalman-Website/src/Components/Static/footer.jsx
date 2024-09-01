@@ -54,8 +54,9 @@ const Footer = () => {
           <div className="h-[250px] lg:h-[60%] w-[300px] flex flex-col items-center justify-between">
             <p className="text-[20px] text-white">Get in Touch</p>
             <p className="flex items-center text-white w-[58%] justify-between">
-              <FaPhoneAlt className="text-brandOne" />
+              <FaPhoneAlt className="text-brandOne text-[35px] mr-3" />
               +234 902 990 3813
+              +234 805 377 4667
             </p>
             <p className="flex items-center w-full text-white justify-between">
               <MdEmail className="text-brandOne" />
