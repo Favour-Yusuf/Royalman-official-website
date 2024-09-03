@@ -31,8 +31,8 @@ const Blog = () => {
               <p className="text-gray-600 mb-4">
                 <strong>Date:</strong> {post.date}
               </p>
-              <p className="text-gray-800 mb-6">
-                {post.content.slice(0, 100)}...
+              <p className="text-gray-800 mb-6"  dangerouslySetInnerHTML={{ __html: post.content.slice(0,100)}}>
+               
               </p>
               <p className="text-gray-500 text-sm">
                 <strong>Author:</strong> {post.author}
