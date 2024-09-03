@@ -91,7 +91,7 @@ const Footer = () => {
       </div>
       <div className="w-full bg-gray-950 text-white py-4 text-center">
         <p className="text-[16px] lg:text-[18px]">
-          © 2024 Royalman Digital concept. All Rights Reserved.
+          © 2024 Royalman Digital Concept. All Rights Reserved.
         </p>
       </div>
     </div>
