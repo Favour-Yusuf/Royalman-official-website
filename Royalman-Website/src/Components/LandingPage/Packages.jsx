@@ -7,7 +7,7 @@ const packages = [
   {
     title: "Essential",
     subtitle: "Perfect for Small Businesses or Startups",
-    price: "$100",
+    price: "$500",
     features: [
       "Custom Website Design",
       "Mobile Optimization",
@@ -24,7 +24,7 @@ const packages = [
   {
     title: "Professional",
     subtitle: "Ideal for Growing Businesses Looking to Expand Online",
-    price: "$200",
+    price: "$700",
     features: [
       "All features in Essential",
       "Enhanced SEO and Analytics Integration",
@@ -42,7 +42,7 @@ const packages = [
   {
     title: "Premium",
     subtitle: "The Ultimate Solution for Businesses Ready to Maximize Online Impact",
-    price: "$400",
+    price: "$1000",
     features: [
       "All features in Professional",
       "Advanced SEO and Performance Optimization",

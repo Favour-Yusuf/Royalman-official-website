@@ -6,6 +6,7 @@ import TermsAndConditionPage from './Pages/TermsAndConditionPage'
 import AboutUsPage from './Pages/AboutUsPage'
 import BlogPage from './Pages/BlogPage'
 import BlogDetails from './Components/BlogPage/BlogDetails'
+import PrivacyPolicies from './Pages/PrivacyPolicies'
 
 
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         <Route path='/about' element={<AboutUsPage/>}/>
         <Route path='/blog' element={<BlogPage/>}/>
         <Route path='/blog/:slug' element={<BlogDetails/>}/>
+        <Route path='/privacypolicy' element={<PrivacyPolicies/>}/>
       </Route>
     )
 )

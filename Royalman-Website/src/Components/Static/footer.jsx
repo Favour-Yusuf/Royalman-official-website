@@ -47,8 +47,11 @@ const Footer = () => {
                 <FaXTwitter />
               </Link>
             </div>
-            <Link to="/termsofservice" className="text-[18px] text-brandOne mt-7">
+            <Link to="/termsofservice" className="text-[18px] text-brandOne hover:text-brandTwo mt-7">
               Term of Service
+            </Link>
+            <Link to="/privacypolicy" className="text-brandOne hover:text-brandTwo">
+                Privacy Policy
             </Link>
           </div>
           <div className="h-[250px] lg:h-[60%] w-[300px] flex flex-col items-center justify-between">
