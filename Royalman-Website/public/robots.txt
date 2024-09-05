@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.royalmandigitalconcept.com/sitemap.txt
+Sitemap: https://www.royalmandigitalconcept.com/sitemap.xml
