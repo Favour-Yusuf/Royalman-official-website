@@ -20,7 +20,7 @@ const router = createBrowserRouter(
         <Route path='/blog' element={<BlogPage/>}/>
         <Route path='/blog/:slug' element={<BlogDetails/>}/>
         <Route path='/privacypolicy' element={<PrivacyPolicies/>}/>
-        <Route path='/consultaionconfirmed' element={<ConfirmationPage/>}/>
+        <Route path='/consultationconfirmed' element={<ConfirmationPage/>}/>
       </Route>
     )
 )
