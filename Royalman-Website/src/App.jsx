@@ -7,8 +7,7 @@ import AboutUsPage from './Pages/AboutUsPage'
 import BlogPage from './Pages/BlogPage'
 import BlogDetails from './Components/BlogPage/BlogDetails'
 import PrivacyPolicies from './Pages/PrivacyPolicies'
-
-
+import ConfirmationPage from './Pages/ConfirmationPage'
 
 
 
@@ -21,6 +20,7 @@ const router = createBrowserRouter(
         <Route path='/blog' element={<BlogPage/>}/>
         <Route path='/blog/:slug' element={<BlogDetails/>}/>
         <Route path='/privacypolicy' element={<PrivacyPolicies/>}/>
+        <Route path='/consultaionconfirmed' element={<ConfirmationPage/>}/>
       </Route>
     )
 )

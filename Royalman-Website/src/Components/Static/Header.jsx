@@ -22,27 +22,38 @@ const Header = () => {
 
   return (
     <header
-      className={`flex justify-between items-center fixed top-0 left-0 w-full z-20 transition-all duration-700 px-5 md:px-10 lg:px-20 ${
-        show ? "bg-white shadow-lg" : "bg-white"
+      className={`flex justify-between items-center text-white fixed top-0 left-0 w-full z-20 transition-all duration-700 px-5 md:px-10 lg:px-20 ${
+        show ? "bg-white text-black shadow-lg" : "bg-transparent"
       }`}
     >
+      {/* Logo Section */}
       <div className="flex items-center">
         <img
           src="https://res.cloudinary.com/decwhxo32/image/upload/v1723390784/RoyalmanLogo_vvjuvk.png"
           alt="Logo"
-          className="h-[50px] md:h-[60px] lg:h-[70px]"
+          className="h-[40px] md:h-[50px] lg:h-[60px]"
         />
       </div>
 
-      <nav className="hidden lg:flex space-x-8 text-lg">
-        <Link to="/" className="hover:text-brandOne">Home</Link>
-        <Link to="/about" className="hover:text-brandOne">About us</Link>
-        <Link to="https://wa.link/ezfpw2" className="hover:text-brandOne">Contact us</Link>
-        <Link to="/blog" className="hover:text-brandOne">Blog</Link>
+      {/* Desktop Navigation */}
+      <nav className="hidden lg:flex space-x-8 text-lg  font-bold">
+        <Link to="/" className="hover:text-brandOne transition duration-300">
+          Home
+        </Link>
+        <Link to="/about" className="hover:text-brandOne transition duration-300">
+          About us
+        </Link>
+        <Link to="https://wa.link/ezfpw2" className="hover:text-brandOne transition duration-300">
+          Contact us
+        </Link>
+        <Link to="/blog" className="hover:text-brandOne transition duration-300">
+          Blog
+        </Link>
       </nav>
 
-      <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation">
-        <button className="hidden md:hidden lg:block h-9 w-36 lg:w-44 rounded-lg bg-brandOne text-white hover:bg-brandTwo transition-colors duration-300">
+      {/* Free Quote Button */}
+      <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="_blank">
+        <button className="hidden lg:block h-9 w-36 lg:w-44 rounded-lg bg-brandOne text-white hover:bg-brandTwo transition duration-300">
           Free Quote
         </button>
       </Link>
@@ -50,7 +61,7 @@ const Header = () => {
       {/* Mobile Menu Icon */}
       <div className="lg:hidden flex items-center">
         <IoReorderTwo
-          className="text-3xl cursor-pointer"
+          className="text-3xl cursor-pointer text-brandOne"
           onClick={() => setMobileNav(true)}
         />
       </div>
@@ -66,44 +77,46 @@ const Header = () => {
             mobileNav ? "translate-x-0" : "-translate-x-full"
           }`}
         >
+          {/* Close Icon */}
           <div className="flex justify-end p-4">
             <MdCancel
-              className="text-2xl cursor-pointer"
+              className="text-2xl cursor-pointer text-brandOne"
               onClick={() => setMobileNav(false)}
             />
           </div>
 
-          <nav className="flex flex-col items-center space-y-6 mt-8 text-lg">
+          {/* Mobile Navigation Links */}
+          <nav className="flex flex-col items-center text-black space-y-6 mt-8 text-lg">
             <Link
               to="/"
               onClick={() => setMobileNav(false)}
-              className="hover:text-brandOne"
+              className="hover:text-brandOne transition duration-300"
             >
               Home
             </Link>
             <Link
               to="/about"
               onClick={() => setMobileNav(false)}
-              className="hover:text-brandOne"
+              className="hover:text-brandOne transition duration-300"
             >
               About us
             </Link>
             <Link
               to="https://wa.link/ezfpw2"
               onClick={() => setMobileNav(false)}
-              className="hover:text-brandOne"
+              className="hover:text-brandOne transition duration-300"
             >
               Contact us
             </Link>
             <Link
               to="/blog"
               onClick={() => setMobileNav(false)}
-              className="hover:text-brandOne"
+              className="hover:text-brandOne transition duration-300"
             >
               Blog
             </Link>
             <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="_blank">
-              <button className="h-9 w-36 md:w-44 rounded-lg bg-brandOne text-white hover:bg-brandTwo transition-colors duration-300">
+              <button className="h-9 w-36 md:w-44 rounded-lg bg-brandOne text-white hover:bg-brandTwo transition duration-300">
                 Free Quote
               </button>
             </Link>

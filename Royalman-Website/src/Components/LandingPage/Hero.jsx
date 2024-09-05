@@ -5,24 +5,37 @@ import Timer from "../../Utils/timer";
 const Hero = () => {
   const endTime = "2024-09-10T23:59:59"; // Set the end time for the countdown
   return (
-    <div className="w-[100%] mb-5 ">
-      <div className=" relative lg:h-[100vh] h-[65vh] w-[100%] bg-hero bg-cover pb-20">
-        <div className="h-[100%] w-[100%] absolute bg-black bg-opacity-75 flex flex-col items-center justify-center">
-          <p className="sm:w-[500px] lg:text-[20px] lg:w-[700px]  sm:text-[33px] text-[18px] text-white text-center leading-relaxed">
-            Attention Business Owners
+    <div className="w-full mb-5">
+      <div className="relative lg:h-screen h-[75vh] w-full bg-hero bg-cover bg-center flex items-center justify-center pb-20 pt-32 lg:pt-48">
+        {/* Darker Overlay for More Text Visibility */}
+        <div className="absolute inset-0 bg-black opacity-85"></div>
+
+        {/* Main Content */}
+        <div className="relative flex flex-col items-center justify-center p-4 text-center space-y-4 z-10">
+          {/* Call to Action for Business Owners */}
+          <p className="w-full max-w-lg lg:max-w-2xl text-brandOne font-bold lg:text-xl text-sm lg:leading-7 animate-pulse">
+            Attention Business Owners!
           </p>
-          <p className="sm:w-[500px] text-white lg:text-[50px] lg:w-[700px]  sm:text-[33px] text-3xl  font-bold text-center leading-[55px]">
-            Boost Your ROI with a High-Converting Website in Just 30 Days
+
+          {/* Main Heading */}
+          <p className="w-full max-w-lg lg:max-w-2xl text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text">
+            Proffessional Custom Website That Converts from just $500
           </p>
-          <Timer endTime={endTime} />
-          <p className="sm:w-[500px] lg:text-[20px] lg:w-[700px]  sm:text-[33px] text-[18px] text-white text-center leading-relaxed">
-            Don't miss out. Get a custom website designed to maximize
-            conversions, attract customers, and grow your business's ROI—all in
-            just 30 days.
+
+          {/* Timer Component */}
+          <div className="flex justify-center mb-4">
+            <Timer endTime={endTime} />
+          </div>
+
+          {/* Subheading with Emphasis on Limited-Time Offer */}
+          <p className="w-full max-w-lg lg:max-w-2xl text-white lg:text-lg text-sm lg:leading-7 mt-6">
+            Don't miss out! This limited-time offer gets you a custom website designed to maximize conversions, attract customers, and grow your business's ROI—all in just 7 days.
           </p>
-          <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="blank">
-            <button className="h-11 mt-10 text-white hover:bg-brandTwo font-bold w-[150px] rounded-lg bg-brandOne">
-              start your order
+
+          {/* Call to Action Button */}
+          <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="_blank">
+            <button className="h-11 mt-8 px-6 text-white hover:bg-brandTwo font-bold rounded-lg bg-brandOne transition duration-300 ease-in-out transform hover:scale-105 shadow-lg z-10">
+              Start Your Order
             </button>
           </Link>
         </div>

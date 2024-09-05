@@ -56,7 +56,7 @@ const Timer = ({ endTime }) => {
         <p className="text-base sm:text-lg text-white mb-4 sm:mb-6 text-center font-bold mr-3">
         Limited-Time Offer: Ends in
         </p>
-      <div className=" bg-brandOne text-white p-2 rounded-sm ">
+      <div className=" bg-white text-red-500 p-2 rounded-sm ">
       {timerComponents.length ? timerComponents : <span className="text-red-500">Time's up!</span>}
       </div>
     </div>

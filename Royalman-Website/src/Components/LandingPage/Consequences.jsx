@@ -10,7 +10,7 @@ const Consequences = () => {
       <ul className="space-y-4">
         <li className="flex items-start space-x-3 text-gray-700">
           <FaDollarSign className="text-brandOne text-[25px]" />
-          <span><strong className="font-semibold">Lost Revenue:</strong> Every day your website underperforms, you’re leaving money on the table.</span>
+          <span><strong className="font-semibold">Lost Revenue:</strong> Everytime your website underperforms, you’re leaving money on the table.</span>
         </li>
         <li className="flex items-start space-x-3 text-gray-700">
           <FaRegSmile className="text-brandOne text-[40px]" />
