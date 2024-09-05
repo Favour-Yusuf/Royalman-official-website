@@ -22,8 +22,8 @@ const Header = () => {
 
   return (
     <header
-      className={`flex justify-between items-center text-white fixed top-0 left-0 w-full z-20 transition-all duration-700 px-5 md:px-10 lg:px-20 ${
-        show ? "bg-white text-black shadow-lg" : "bg-transparent"
+      className={`flex justify-between items-center fixed top-0 left-0 w-full z-20 transition-all duration-700 px-5 md:px-10 lg:px-20 ${
+        show ? "bg-white text-black shadow-lg" : "bg-transparent text-white"
       }`}
     >
       {/* Logo Section */}
