@@ -6,7 +6,7 @@ const Hero = () => {
   const endTime = "2024-09-10T23:59:59"; // Set the end time for the countdown
   return (
     <div className="w-full mb-5">
-      <div className="relative lg:h-screen h-[75vh] w-full bg-hero bg-cover bg-center flex items-center justify-center pb-20 pt-32 lg:pt-48">
+      <div className="relative lg:h-[105vh] h-[75vh] w-full bg-hero bg-cover bg-center flex items-center justify-center pb-20 pt-32 lg:pt-48">
         {/* Darker Overlay for More Text Visibility */}
         <div className="absolute inset-0 bg-black opacity-85"></div>
 
