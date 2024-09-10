@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Timer from "../../Utils/timer";
 
 const Hero = () => {
-  const endTime = "2024-09-10T23:59:59"; // Set the end time for the countdown
+  const endTime = "2024-09-20T23:59:59"; // Set the end time for the countdown
   return (
     <div className="w-full mb-5">
       <div className="relative lg:h-[105vh] h-[75vh] w-full bg-hero bg-cover bg-center flex items-center justify-center pb-20 pt-32 lg:pt-48">
@@ -19,7 +19,7 @@ const Hero = () => {
 
           {/* Main Heading */}
           <p className="w-full max-w-lg lg:max-w-2xl text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text">
-            Proffessional Custom Website That Converts from just $500
+          Get a Custom Fit-Website that puts you ahead Of Your Competitors, Designed With Precision To Reflect Your Unique Brand.
           </p>
 
           {/* Timer Component */}
@@ -29,7 +29,7 @@ const Hero = () => {
 
           {/* Subheading with Emphasis on Limited-Time Offer */}
           <p className="w-full max-w-lg lg:max-w-2xl text-white lg:text-lg text-sm lg:leading-7 mt-6">
-            Don't miss out! This limited-time offer gets you a custom website designed to maximize conversions, attract customers, and grow your business's ROI—all in just 7 days.
+          Our custom fit website delivers seamless user experience and superior performance to drive conversion.
           </p>
 
           {/* Call to Action Button */}
