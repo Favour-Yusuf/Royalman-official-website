@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
 
           {/* Main Heading */}
-          <p className="w-full max-w-lg lg:max-w-2xl text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text">
+          <p className="w-full max-w-lg lg:max-w-2xl text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold leading-tight mb-6 text">
           Get a Custom Fit-Website that puts you ahead Of Your Competitors, Designed With Precision To Reflect Your Unique Brand.
           </p>
 
