@@ -1,7 +1,6 @@
-// Packages.js
 import React from 'react';
-import { FaRegCheckCircle, FaMobileAlt, FaChartLine, FaShoppingCart, FaCog } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaRegCheckCircle, FaMobileAlt, FaChartLine, FaShoppingCart } from 'react-icons/fa';
+import { PopupButton } from '@typeform/embed-react';
 
 const packages = [
   {
@@ -19,7 +18,8 @@ const packages = [
     idealFor: "Establishing a professional online presence",
     buttonText: "Choose Essential",
     buttonColor: "bg-blue-500 hover:bg-blue-600",
-    icon: <FaMobileAlt className="text-blue-500 text-3xl mb-4" />
+    icon: <FaMobileAlt className="text-blue-500 text-3xl mb-4" />,
+    typeformId: "ZerjkUzb" // Add your Typeform ID here
   },
   {
     title: "Professional",
@@ -37,7 +37,8 @@ const packages = [
     idealFor: "Increased engagement and visibility",
     buttonText: "Choose Professional",
     buttonColor: "bg-green-500 hover:bg-green-600",
-    icon: <FaChartLine className="text-green-500 text-3xl mb-4" />
+    icon: <FaChartLine className="text-green-500 text-3xl mb-4" />,
+    typeformId: "ZerjkUzb" // Add your Typeform ID here
   },
   {
     title: "Premium",
@@ -55,7 +56,8 @@ const packages = [
     idealFor: "Businesses aiming for top-tier performance and growth",
     buttonText: "Choose Premium",
     buttonColor: "bg-red-500 hover:bg-red-600",
-    icon: <FaShoppingCart className="text-red-500 text-3xl mb-4" />
+    icon: <FaShoppingCart className="text-red-500 text-3xl mb-4" />,
+    typeformId: "ZerjkUzb" // Add your Typeform ID here
   },
 ];
 
@@ -84,12 +86,17 @@ const Packages = () => {
               ))}
             </ul>
             <p className="text-gray-600 mb-4">{pkg.idealFor}</p>
-           
-          <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="blank">
-           <button className={`${pkg.buttonColor} text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300`}>
+
+            {/* PopupButton for Typeform */}
+            <PopupButton  id="ZerjkUzb">
+            <button
+              className={`${pkg.buttonColor} text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300`}
+            >
               {pkg.buttonText}
             </button>
-           </Link>
+            </PopupButton>
+           
+            
           </div>
         ))}
       </div>
@@ -97,11 +104,13 @@ const Packages = () => {
         <h4 className="text-lg font-semibold text-gray-800 mb-4">
           Ready to Elevate Your Online Presence? Choose the Package That’s Right for You and Get Started Today.
         </h4>
-          <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="blank">
-        <button className="bg-brandOne hover:bg-brandTwo text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300">
-          Start Your Order
-        </button>
-        </Link>
+       <PopupButton id="ZerjkUzb" >
+       <button className="bg-brandOne hover:bg-brandTwo text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300">
+            Start Your Order
+          </button>
+       </PopupButton>
+          
+       
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Timer from "../../Utils/timer";
+import { PopupButton } from "@typeform/embed-react";
 
 const Hero = () => {
   const endTime = "2024-09-20T23:59:59"; // Set the end time for the countdown
@@ -19,7 +19,8 @@ const Hero = () => {
 
           {/* Main Heading */}
           <p className="w-full max-w-lg lg:max-w-2xl text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold leading-tight mb-6 text">
-          Get a Custom Fit-Website that puts you ahead Of Your Competitors, Designed With Precision To Reflect Your Unique Brand.
+            Get a Custom Fit-Website that puts you ahead Of Your Competitors,
+            Designed With Precision To Reflect Your Unique Brand.
           </p>
 
           {/* Timer Component */}
@@ -29,15 +30,16 @@ const Hero = () => {
 
           {/* Subheading with Emphasis on Limited-Time Offer */}
           <p className="w-full max-w-lg lg:max-w-2xl text-white lg:text-lg text-sm lg:leading-7 mt-6">
-          Our custom fit website delivers seamless user experience and superior performance to drive conversion.
+            Our custom fit website delivers seamless user experience and
+            superior performance to drive conversion.
           </p>
 
           {/* Call to Action Button */}
-          <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="_blank">
+          <PopupButton id="ZerjkUzb">
             <button className="h-11 mt-8 px-6 text-white hover:bg-brandTwo font-bold rounded-lg bg-brandOne transition duration-300 ease-in-out transform hover:scale-105 shadow-lg z-10">
               Start Your Order
             </button>
-          </Link>
+          </PopupButton>
         </div>
       </div>
     </div>

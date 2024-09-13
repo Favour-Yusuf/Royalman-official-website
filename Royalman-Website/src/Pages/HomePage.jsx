@@ -12,15 +12,14 @@ import ProcessSteps from '../Components/LandingPage/Steps'
 import MoneyBackGuarantee from '../Components/LandingPage/Guarantee'
 import Packages from '../Components/LandingPage/Packages'
 import FAQ from '../Components/LandingPage/FAQ'
+
 // import { Helmet } from 'react-helmet-async'
 
 
 const HomePage = () => {
   return (
     <>
-    {/* <Helmet>
-    
-    </Helmet> */}
+   
     <Hero/>
     {/* <WhatWeDo/> */}
     <SuccessStory/>

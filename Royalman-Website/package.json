@@ -11,6 +11,8 @@
     "generate-sitemap": "sitemap-generator-cli https://www.royalmandigitalconcept.com -o public/sitemap.xml"
   },
   "dependencies": {
+    "@typeform/embed": "^5.1.0",
+    "@typeform/embed-react": "^4.1.0",
     "@vercel/analytics": "^1.3.1",
     "@vercel/speed-insights": "^1.0.12",
     "react": "^18.3.1",
