@@ -12,7 +12,7 @@ const HighPerformingWebsite = () => {
         A strategically designed, user-friendly website is essential for building trust, enhancing user experience, and maximizing conversions.
       </p>
       <p className="text-gray-600 mb-6 leading-relaxed">
-        By optimizing your website’s design, content, and functionality, you can elevate your brand’s online presence, increase organic traffic, and significantly improve your ROI.
+        By optimizing your website’s design, content, and functionality, you can elevate your brand’s online presence, increase organic traffic, and significantly improve your conversion rate.
       </p>
       <div className="flex flex-col sm:flex-row items-start justify-around mt-6">
         <div className="flex items-center space-x-3 mb-4 sm:mb-0">

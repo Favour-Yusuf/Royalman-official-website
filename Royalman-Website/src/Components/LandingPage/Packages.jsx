@@ -12,7 +12,9 @@ const packages = [
       "Mobile Optimization",
       "Basic SEO Setup",
       "Contact Form Integration",
+      "Professional copywriting",
       "1 Round of Revisions",
+      "Domain and SSL certificate",
       "30-Day Money-Back Guarantee"
     ],
     idealFor: "Establishing a professional online presence",

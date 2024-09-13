@@ -13,7 +13,7 @@ const steps = [
   {
     step: "Step 1: Book Your Free 10-Minute Consultation",
     description:
-      "Schedule a quick one-on-one call with our team to discuss your needs and goals. We’ll provide expert guidance and outline the best way forward.",
+      "Schedule a quick one-on-one meeting with our team to discuss your needs and goals. We’ll provide expert guidance and outline the best way forward.",
     icon: <FaCalendarAlt className="text-blue-500 text-3xl mb-2" />,
   },
   {

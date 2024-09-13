@@ -53,7 +53,7 @@ const Header = () => {
 
       {/* Free Quote Button */}
       <Link to="https://calendly.com/royalmanglobalenterprise/free_consultation" target="_blank">
-        <button className="hidden lg:block h-9 w-36 lg:w-44 rounded-lg bg-brandOne text-white hover:bg-brandTwo transition duration-300">
+        <button className="hidden lg:block h-9 w-36 lg:w-44 rounded-lg bg-brandOne font-bold text-white hover:bg-brandTwo transition duration-300">
           Free Quote
         </button>
       </Link>
