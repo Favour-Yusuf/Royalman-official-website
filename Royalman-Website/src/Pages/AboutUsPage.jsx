@@ -1,7 +1,8 @@
 import React from 'react'
-import AboutHero from '../Components/About/AboutHero'
-import AboutUs from '../Components/About/AboutUs'
-import Portfolio from '../Components/About/Portfolio'
+import HeroSection from '../Components/About/AboutHero'
+import AboutContent from '../Components/About/AboutContent'
+import MissionSection from '../Components/About/MissionSection'
+import WhyChooseUs from '../Components/About/WhyChooseUs'
 import { Helmet } from 'react-helmet-async'
 
 
@@ -13,9 +14,10 @@ const AboutUsPage = () => {
     <meta name='description' content='About Royalman Digital Concept' />
     <link rel="canonical" href="/about" />
     </Helmet>
-    <AboutHero/>
-    <AboutUs/>
-    <Portfolio/>
+    <HeroSection />
+      <AboutContent />
+      <MissionSection />
+      <WhyChooseUs />
     
     </>
   )

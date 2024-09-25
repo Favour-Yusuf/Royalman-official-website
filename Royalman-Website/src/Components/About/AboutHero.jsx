@@ -1,17 +1,13 @@
-import React from 'react'
-
-const AboutHero = () => {
+// HeroSection.jsx
+const HeroSection = () => {
   return (
-    <div className="w-[100%] mb-5">
-        <div className=" relative h-[65vh] lg:h-[100vh] w-[100%] bg-about bg-cover">
-            <div className="h-[100%] w-[100%] absolute bg-black bg-opacity-60 flex items-center justify-center flex-col">
-                <p className=' text-white text-[70px] font-bold text-center leading-tight'>About Us</p>
-              
-                    {/* <button className='h-11 mt-10 font-bold w-80 rounded-lg bg-brandOne'>Get a Free Consultation</button> */}
-            </div>
-        </div>
-    </div>
-  )
-}
+    <section className="bg-gradient-to-r from-orange-700 to-brandTwo text-white py-20">
+      <div className="container mx-auto text-center px-6">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">We Create Websites That Work For You</h1>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">Custom-designed websites that reflect your brand and convert visitors into customers.</p>
+      </div>
+    </section>
+  );
+};
 
-export default AboutHero
+export default HeroSection;
