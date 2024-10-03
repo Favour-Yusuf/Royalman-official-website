@@ -3,7 +3,7 @@ import Timer from "../../Utils/timer";
 import { PopupButton } from "@typeform/embed-react";
 
 const Hero = () => {
-  const endTime = "2024-10-15T23:59:59"; // Set the end time for the countdown
+  const endTime = "2024-10-14T23:59:59"; // Set the end time for the countdown
   return (
     <div className="w-full mb-5">
       <div className="relative lg:h-[105vh] h-[75vh] w-full bg-hero bg-cover bg-center flex items-center justify-center pb-20 pt-32 lg:pt-48">
