@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdCancel } from "react-icons/md";
-import { IoReorderTwo } from "react-icons/io5";
+import { HiMenuAlt2 } from "react-icons/hi";
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -60,7 +60,7 @@ const Header = () => {
 
       {/* Mobile Menu Icon */}
       <div className="lg:hidden flex items-center">
-        <IoReorderTwo
+        <HiMenuAlt2 
           className="text-3xl cursor-pointer text-brandOne"
           onClick={() => setMobileNav(true)}
         />
