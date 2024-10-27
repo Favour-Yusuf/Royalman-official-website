@@ -34,36 +34,50 @@ const Footer = () => {
               <Link to="https://wa.link/ezfpw2" target="blank">
                 <FaWhatsapp />
               </Link>
-              <Link to="https://www.facebook.com/profile.php?id=61563814688772" target="blank">
+              <Link
+                to="https://www.facebook.com/profile.php?id=61563814688772"
+                target="blank"
+              >
                 <FaFacebookF />
               </Link>
-              <Link to="https://www.linkedin.com/in/royalman-digital-concept-885514322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank">
+              <Link
+                to="https://www.linkedin.com/in/royalman-digital-concept-885514322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="blank"
+              >
                 <FaLinkedin />
               </Link>
-              <Link to="https://www.instagram.com/royalmandigital/" target="blank">
+              <Link
+                to="https://www.instagram.com/royalmandigital/"
+                target="blank"
+              >
                 <FaInstagram />
               </Link>
               <Link to="https://twitter.com/royalmanglobal" target="blank">
                 <FaXTwitter />
               </Link>
             </div>
-            <Link to="/termsofservice" className="text-[18px] text-brandOne hover:text-brandTwo mt-7">
+            <Link
+              to="/termsofservice"
+              className="text-[18px] text-brandOne hover:text-brandTwo mt-7"
+            >
               Term of Service
             </Link>
-            <Link to="/privacypolicy" className="text-brandOne hover:text-brandTwo">
-                Privacy Policy
+            <Link
+              to="/privacypolicy"
+              className="text-brandOne hover:text-brandTwo"
+            >
+              Privacy Policy
             </Link>
           </div>
           <div className="h-[250px] lg:h-[60%] w-[300px] flex flex-col items-center justify-between">
             <p className="text-[20px] text-white">Get in Touch</p>
             <p className="flex items-center text-white w-[58%] justify-between">
               <FaPhoneAlt className="text-brandOne text-[35px] mr-3" />
-              +234 902 990 3813
-              +234 805 377 4667
+              +234 902 990 3813 +234 805 377 4667
             </p>
             <p className="flex items-center w-full text-white justify-between">
               <MdEmail className="text-brandOne" />
-              royalmanglobalenterprise@gmail.com
+              info@royalmandigitalconcept.com
             </p>
             <p className="flex items-center w-[70%] text-white justify-between">
               <FaWhatsapp className="text-brandOne" />
