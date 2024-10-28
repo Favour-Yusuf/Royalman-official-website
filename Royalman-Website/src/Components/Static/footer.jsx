@@ -77,7 +77,7 @@ const Footer = () => {
             </p>
             <p className="flex items-center w-full text-white justify-between">
               <MdEmail className="text-brandOne" />
-              hello@test.com
+              info@royalmandigitalconcept.com
             </p>
             <p className="flex items-center w-[70%] text-white justify-between">
               <FaWhatsapp className="text-brandOne" />
