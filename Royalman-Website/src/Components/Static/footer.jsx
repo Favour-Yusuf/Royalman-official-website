@@ -75,9 +75,10 @@ const Footer = () => {
               <FaPhoneAlt className="text-brandOne text-[35px] mr-3" />
               +234 902 990 3813 +234 805 377 4667
             </p>
-            <p className="flex items-center w-full text-white justify-between">
+            <p className="flex items-center w-full text-white flex-col justify-between">
               <MdEmail className="text-brandOne" />
-              info@royalmandigitalconcept.com
+              info@royalmandigitalconcept.com royalmandigitalconcept@gmail.com
+              royalmanglobalenterprise@gmail.com
             </p>
             <p className="flex items-center w-[70%] text-white justify-between">
               <FaWhatsapp className="text-brandOne" />
