@@ -75,8 +75,8 @@ const Footer = () => {
               <FaPhoneAlt className="text-brandOne text-[35px] mr-3" />
               +234 902 990 3813 +234 805 377 4667
             </p>
-            <p className="flex items-center w-full text-white flex-col justify-between">
-              <MdEmail className="text-brandOne" />
+            <p className="flex items-center justify-between w-full text-white ">
+              <MdEmail className="text-brandOne text-[50px] mr-2" />
               info@royalmandigitalconcept.com royalmandigitalconcept@gmail.com
               royalmanglobalenterprise@gmail.com
             </p>
